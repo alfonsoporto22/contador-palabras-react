@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import './App.css';
 import Letras from './components/letras/Letras';
+import Palabras from './components/palabras/Palabras';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       </form>
 
       <Letras text={text} />
+      <Palabras text={text} />
     </div>
   );
 }

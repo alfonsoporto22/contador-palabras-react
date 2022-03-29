@@ -8,19 +8,11 @@ function Letras({text}) {
             numeroLetras++;
         }
     }
-    let numeroPalabras=0;
-    for(let i=0;i<text.length;i++){
-        if (text[i]==" "){
-            numeroPalabras++;
-        }
-    }
 
     return (
         <>
         <p>LETRAS</p>
         <p>{numeroLetras}</p>
-        <p>PALABRAS</p>
-        <p>{numeroPalabras}</p>
         </>
         
     );

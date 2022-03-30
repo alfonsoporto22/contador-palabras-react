@@ -12,6 +12,13 @@ function App() {
     console.log(text);
   }
 
+  useEffect(
+    () => {
+      console.log("effect:", text);
+    },
+    [text]
+  )
+
 
   return (
     <div className="App">

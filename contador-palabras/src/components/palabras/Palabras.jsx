@@ -1,21 +1,21 @@
 import { useEffect, useState, useRef } from 'react';
 
-function Palabras({text}) {
-    
-    let numeroPalabras=0;
-    const myArray=text.split(" ");
-    for (let i=0;i<myArray.length;i++){
-        if (myArray[i]!=""){
+function Palabras({ text }) {
+
+    let numeroPalabras = 0;
+    const myArray = text.split(" ");
+    for (let i = 0; i < myArray.length; i++) {
+        if (myArray[i] != "" && myArray[i] != "\n") {
             numeroPalabras++;
         }
     }
 
     return (
         <>
-        <p>PALABRAS</p>
-        <p>{numeroPalabras}</p>
+            <p>PALABRAS</p>
+            <p>{numeroPalabras}</p>
         </>
-        
+
     );
 }
 
